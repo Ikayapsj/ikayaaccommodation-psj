@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 pb-8">
           <div>
-            <h3 className="text-xl font-serif font-semibold mb-4">iKaya Green</h3>
+            <h3 className="text-xl font-serif font-semibold mb-4">Ikaya Accommodation PSJ</h3>
             <p className="text-ikaya-100 mb-4">
               Your tranquil escape in the heart of Port St Johns. Experience comfort, convenience, and natural beauty.
             </p>
@@ -64,7 +63,7 @@ const Footer = () => {
         
         <div className="border-t border-ikaya-700 pt-6 mt-2">
           <p className="text-center text-ikaya-300 text-sm">
-            &copy; {currentYear} iKaya Green Getaway. All rights reserved.
+            &copy; {currentYear} Ikaya Accommodation PSJ. All rights reserved.
           </p>
         </div>
       </div>

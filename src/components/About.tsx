@@ -6,13 +6,13 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-white">
       <div className="container mx-auto">
-        <h2 className="section-title">About <span className="text-ikaya-600">iKaya Green</span></h2>
+        <h2 className="section-title">About <span className="text-ikaya-600">Ikaya Accommodation PSJ</span></h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img 
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-              alt="iKaya Green Getaway Exterior" 
+              alt="Ikaya Accommodation PSJ Exterior" 
               className="rounded-lg shadow-lg w-full h-[400px] object-cover"
             />
             <div className="absolute -bottom-6 -right-6 bg-ikaya-50 p-6 rounded-lg shadow-md hidden md:block">
@@ -26,7 +26,7 @@ const About = () => {
             <h3 className="text-2xl font-serif font-semibold text-ikaya-800">Your Home Away From Home</h3>
             
             <p className="text-gray-700">
-              Welcome to iKaya Green Getaway, a tranquil oasis nestled in the heart of Port St Johns. 
+              Welcome to Ikaya Accommodation PSJ, a tranquil oasis nestled in the heart of Port St Johns. 
               Our guest house offers a perfect blend of comfort, convenience, and connection to nature, 
               making it an ideal destination for both leisure and business travelers.
             </p>
