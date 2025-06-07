@@ -45,6 +45,15 @@ const Hero = () => {
 
   return (
     <div id="home" className="relative h-screen w-full">
+      {/* Logo in top right corner */}
+      <div className="absolute top-20 right-6 z-20 logo-fade-in">
+        <img 
+          src="/lovable-uploads/309c289d-fe6f-49b5-b74b-df648ad53151.png" 
+          alt="Ikaya Accommodation PSJ Logo" 
+          className="w-24 h-24 md:w-32 md:h-32 object-contain"
+        />
+      </div>
+
       {/* Slides */}
       <div className="h-full w-full relative overflow-hidden">
         {slides.map((slide, index) => (
@@ -60,27 +69,27 @@ const Hero = () => {
             }}
           >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div className="absolute inset-0 bg-ikaya-blue-500 bg-opacity-40"></div>
             
             {/* Content */}
             <div className="container mx-auto px-4 h-full flex items-center justify-center">
               <div className="text-center max-w-4xl mx-auto z-10 relative">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white font-bold mb-4 drop-shadow-lg">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-white font-bold mb-4 drop-shadow-lg">
                   {slide.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-lg">
+                <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-lg font-subheading">
                   {slide.subtitle}
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <a 
                     href="#rooms" 
-                    className="bg-ikaya-600 hover:bg-ikaya-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
+                    className="bg-ikaya-green-500 hover:bg-ikaya-green-600 text-white px-6 py-3 rounded-md font-medium transition-colors"
                   >
                     View Rooms
                   </a>
                   <a 
                     href="#contact" 
-                    className="bg-white hover:bg-gray-100 text-ikaya-800 px-6 py-3 rounded-md font-medium transition-colors"
+                    className="bg-ikaya-500 hover:bg-ikaya-600 text-white px-6 py-3 rounded-md font-medium transition-colors"
                   >
                     Book Now
                   </a>
@@ -92,12 +101,12 @@ const Hero = () => {
       </div>
       
       {/* Left Arrow */}
-      <div className="absolute top-1/2 -translate-y-1/2 left-4 p-2 bg-black/30 text-white rounded-full cursor-pointer hover:bg-black/50 transition-colors z-10">
+      <div className="absolute top-1/2 -translate-y-1/2 left-4 p-2 bg-ikaya-blue-500/30 text-white rounded-full cursor-pointer hover:bg-ikaya-blue-500/50 transition-colors z-10">
         <ChevronLeft onClick={prevSlide} size={24} />
       </div>
       
       {/* Right Arrow */}
-      <div className="absolute top-1/2 -translate-y-1/2 right-4 p-2 bg-black/30 text-white rounded-full cursor-pointer hover:bg-black/50 transition-colors z-10">
+      <div className="absolute top-1/2 -translate-y-1/2 right-4 p-2 bg-ikaya-blue-500/30 text-white rounded-full cursor-pointer hover:bg-ikaya-blue-500/50 transition-colors z-10">
         <ChevronRight onClick={nextSlide} size={24} />
       </div>
       
@@ -108,7 +117,7 @@ const Hero = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`h-2 rounded-full transition-all ${
-              index === currentIndex ? 'bg-white w-8' : 'bg-white/60 w-2'
+              index === currentIndex ? 'bg-ikaya-aqua-500 w-8' : 'bg-white/60 w-2'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

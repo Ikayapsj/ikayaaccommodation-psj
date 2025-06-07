@@ -57,9 +57,9 @@ const Rooms = () => {
   const [activeRoom, setActiveRoom] = useState<number | null>(null);
 
   return (
-    <section id="rooms" className="section-padding bg-ikaya-50">
+    <section id="rooms" className="section-padding bg-ikaya-100">
       <div className="container mx-auto">
-        <h2 className="section-title">Our <span className="text-ikaya-600">Accommodations</span></h2>
+        <h2 className="section-title">Our <span className="text-ikaya-green-500">Accommodations</span></h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {roomsData.map((room) => (
@@ -73,30 +73,30 @@ const Rooms = () => {
                   alt={room.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-ikaya-600 text-white px-3 py-1 rounded-md text-sm font-medium">
+                <div className="absolute top-4 right-4 bg-ikaya-green-500 text-white px-3 py-1 rounded-md text-sm font-medium">
                   {room.price} per night
                 </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-serif font-semibold text-ikaya-800 mb-2">{room.name}</h3>
-                <p className="text-gray-600 mb-4">{room.description}</p>
+                <h3 className="text-xl font-subheading font-semibold text-ikaya-blue-500 mb-2">{room.name}</h3>
+                <p className="text-gray-600 mb-4 font-body">{room.description}</p>
                 
                 <div className="flex space-x-4 mb-4">
                   <div className="flex items-center">
-                    <Bed size={18} className="text-ikaya-600 mr-2" />
-                    <span className="text-sm text-gray-600">{room.beds}</span>
+                    <Bed size={18} className="text-ikaya-green-500 mr-2" />
+                    <span className="text-sm text-gray-600 font-body">{room.beds}</span>
                   </div>
                   
                   <div className="flex items-center">
-                    <Users size={18} className="text-ikaya-600 mr-2" />
-                    <span className="text-sm text-gray-600">{room.occupancy}</span>
+                    <Users size={18} className="text-ikaya-green-500 mr-2" />
+                    <span className="text-sm text-gray-600 font-body">{room.occupancy}</span>
                   </div>
                 </div>
                 
                 <button 
                   onClick={() => setActiveRoom(activeRoom === room.id ? null : room.id)}
-                  className="text-ikaya-700 font-medium hover:text-ikaya-900 flex items-center"
+                  className="text-ikaya-blue-500 font-medium hover:text-ikaya-green-500 flex items-center"
                 >
                   View features
                   <svg 
@@ -117,8 +117,8 @@ const Rooms = () => {
                   <div className="mt-4 space-y-2 animate-fade-in">
                     {room.features.map((feature, index) => (
                       <div key={index} className="flex items-start gap-2">
-                        <Check size={16} className="text-ikaya-600 mt-1 flex-shrink-0" />
-                        <span className="text-sm text-gray-600">{feature}</span>
+                        <Check size={16} className="text-ikaya-green-500 mt-1 flex-shrink-0" />
+                        <span className="text-sm text-gray-600 font-body">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -126,7 +126,7 @@ const Rooms = () => {
                 
                 <a
                   href="#contact"
-                  className="mt-6 block text-center bg-ikaya-600 hover:bg-ikaya-700 text-white py-2 rounded-md transition-colors"
+                  className="mt-6 block text-center bg-ikaya-green-500 hover:bg-ikaya-green-600 text-white py-2 rounded-md transition-colors"
                 >
                   Book Now
                 </a>

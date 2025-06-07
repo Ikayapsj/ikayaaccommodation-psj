@@ -35,13 +35,13 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl md:text-3xl font-serif font-bold text-ikaya-800">
-            Ikaya Accommodation <span className="text-ikaya-600">PSJ</span>
+          <a href="#" className="text-2xl md:text-3xl font-heading font-bold text-ikaya-blue-500">
+            Ikaya Accommodation <span className="text-ikaya-green-500">PSJ</span>
           </a>
 
           {/* Mobile menu button */}
           <button 
-            className="lg:hidden text-ikaya-800 hover:text-ikaya-600"
+            className="lg:hidden text-ikaya-blue-500 hover:text-ikaya-green-500"
             onClick={toggleMenu}
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -50,14 +50,14 @@ const NavBar = () => {
 
           {/* Desktop menu */}
           <div className="hidden lg:flex space-x-8 items-center">
-            <a href="#home" className="text-ikaya-800 hover:text-ikaya-600 font-medium">Home</a>
-            <a href="#about" className="text-ikaya-800 hover:text-ikaya-600 font-medium">About</a>
-            <a href="#rooms" className="text-ikaya-800 hover:text-ikaya-600 font-medium">Rooms</a>
-            <a href="#amenities" className="text-ikaya-800 hover:text-ikaya-600 font-medium">Amenities</a>
-            <a href="#contact" className="text-ikaya-800 hover:text-ikaya-600 font-medium">Contact</a>
+            <a href="#home" className="text-ikaya-blue-500 hover:text-ikaya-green-500 font-medium">Home</a>
+            <a href="#about" className="text-ikaya-blue-500 hover:text-ikaya-green-500 font-medium">About</a>
+            <a href="#rooms" className="text-ikaya-blue-500 hover:text-ikaya-green-500 font-medium">Rooms</a>
+            <a href="#amenities" className="text-ikaya-blue-500 hover:text-ikaya-green-500 font-medium">Amenities</a>
+            <a href="#contact" className="text-ikaya-blue-500 hover:text-ikaya-green-500 font-medium">Contact</a>
             <a 
               href="#contact" 
-              className="bg-ikaya-600 text-white px-5 py-2 rounded-md hover:bg-ikaya-700 transition-colors"
+              className="bg-ikaya-green-500 text-white px-5 py-2 rounded-md hover:bg-ikaya-green-600 transition-colors"
             >
               Book Now
             </a>
@@ -69,14 +69,14 @@ const NavBar = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white absolute top-full left-0 w-full shadow-md animate-fade-in">
           <div className="flex flex-col py-4 px-6 space-y-4">
-            <a href="#home" className="text-ikaya-800 hover:text-ikaya-600 py-2" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="#about" className="text-ikaya-800 hover:text-ikaya-600 py-2" onClick={() => setIsMenuOpen(false)}>About</a>
-            <a href="#rooms" className="text-ikaya-800 hover:text-ikaya-600 py-2" onClick={() => setIsMenuOpen(false)}>Rooms</a>
-            <a href="#amenities" className="text-ikaya-800 hover:text-ikaya-600 py-2" onClick={() => setIsMenuOpen(false)}>Amenities</a>
-            <a href="#contact" className="text-ikaya-800 hover:text-ikaya-600 py-2" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a href="#home" className="text-ikaya-blue-500 hover:text-ikaya-green-500 py-2" onClick={() => setIsMenuOpen(false)}>Home</a>
+            <a href="#about" className="text-ikaya-blue-500 hover:text-ikaya-green-500 py-2" onClick={() => setIsMenuOpen(false)}>About</a>
+            <a href="#rooms" className="text-ikaya-blue-500 hover:text-ikaya-green-500 py-2" onClick={() => setIsMenuOpen(false)}>Rooms</a>
+            <a href="#amenities" className="text-ikaya-blue-500 hover:text-ikaya-green-500 py-2" onClick={() => setIsMenuOpen(false)}>Amenities</a>
+            <a href="#contact" className="text-ikaya-blue-500 hover:text-ikaya-green-500 py-2" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <a 
               href="#contact" 
-              className="bg-ikaya-600 text-white px-5 py-2 rounded-md hover:bg-ikaya-700 transition-colors text-center"
+              className="bg-ikaya-green-500 text-white px-5 py-2 rounded-md hover:bg-ikaya-green-600 transition-colors text-center"
               onClick={() => setIsMenuOpen(false)}
             >
               Book Now

@@ -63,19 +63,58 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom tropical green colors
+				// Brand colors
 				'ikaya': {
-					50: '#f2f9f1',
-					100: '#e4f3e3',
-					200: '#c9e7c8',
-					300: '#a3d69e',
-					400: '#78bd6e',
-					500: '#52a349',
-					600: '#3f8639',
-					700: '#336a2f',
-					800: '#2c5428',
-					900: '#244523',
-					950: '#0f2510',
+					50: '#f8f6f2',
+					100: '#efe9dc', /* #efe9dc */
+					200: '#e0d5c0',
+					300: '#d0c1a4',
+					400: '#c0ad88',
+					500: '#a47c48', /* #a47c48 */
+					600: '#8c6a3e',
+					700: '#745834',
+					800: '#5c462a',
+					900: '#443420',
+					950: '#2c2216',
+				},
+				'ikaya-blue': {
+					50: '#f1f4f7',
+					100: '#e3e9ef',
+					200: '#c7d3df',
+					300: '#9bb4c9',
+					400: '#6b8faa',
+					500: '#506d84', /* #506d84 */
+					600: '#445a6e',
+					700: '#384a5a',
+					800: '#2c3a46',
+					900: '#202a32',
+					950: '#141a1e',
+				},
+				'ikaya-green': {
+					50: '#f4f7f4',
+					100: '#e9efe9',
+					200: '#d3dfd3',
+					300: '#bdcfbd',
+					400: '#a7bfa7',
+					500: '#7ea07d', /* #7ea07d */
+					600: '#6b8a6a',
+					700: '#587457',
+					800: '#455e44',
+					900: '#324831',
+					950: '#1f321e',
+				},
+				'ikaya-aqua': {
+					50: '#f6f9f9',
+					100: '#edf3f3',
+					200: '#dbe7e7',
+					300: '#c9dbdb',
+					400: '#b7cfcf',
+					500: '#a7c8c7', /* #a7c8c7 */
+					600: '#8fa6a5',
+					700: '#778483',
+					800: '#5f6261',
+					900: '#47403f',
+					950: '#2f1e1d',
 				},
 			},
 			borderRadius: {
@@ -112,16 +151,24 @@ export default {
 					'0%': { transform: 'translateX(100%)' },
 					'100%': { transform: 'translateX(0)' }
 				},
+				'logoFadeIn': {
+					'0%': { opacity: '0', transform: 'translateY(-20px)' },
+					'100%': { opacity: '0.8', transform: 'translateY(0)' }
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.4s ease-out',
 				'slide-in-right': 'slide-in-right 0.3s ease-out',
+				'logo-fade-in': 'logoFadeIn 2s ease-in-out',
 			},
 			fontFamily: {
-				'serif': ['Playfair Display', 'serif'],
-				'sans': ['Montserrat', 'sans-serif'],
+				'heading': ['Josefin Sans', 'sans-serif'],
+				'subheading': ['Lora', 'serif'],
+				'body': ['Quattrocento', 'serif'],
+				'sans': ['Josefin Sans', 'sans-serif'],
+				'serif': ['Lora', 'serif'],
 			},
 		}
 	},
