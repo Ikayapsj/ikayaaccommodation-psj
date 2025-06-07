@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
 
@@ -47,14 +46,14 @@ const Contact = () => {
   };
   
   return (
-    <section id="contact" className="section-padding bg-ikaya-50">
+    <section id="contact" className="section-padding bg-coastal-brown">
       <div className="container mx-auto">
-        <h2 className="section-title">Book Your <span className="text-ikaya-600">Stay</span></h2>
+        <h2 className="section-title text-white">Book Your <span className="text-white">Stay</span></h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <div className="bg-white rounded-lg shadow-smooth p-8">
-              <h3 className="text-2xl font-serif font-semibold text-ikaya-800 mb-6">Booking Inquiry</h3>
+              <h3 className="text-2xl font-serif font-semibold mb-6" style={{color: '#5f7f61'}}>Booking Inquiry</h3>
               
               {isSubmitted ? (
                 <div className="bg-green-50 border border-green-200 rounded-md p-6 text-center">
@@ -76,7 +75,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ikaya-600 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent"
                       placeholder="Your full name"
                       required
                     />
@@ -91,7 +90,7 @@ const Contact = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ikaya-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent"
                         placeholder="Your email"
                         required
                       />
@@ -105,7 +104,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ikaya-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent"
                         placeholder="Your phone number"
                       />
                     </div>
@@ -120,7 +119,7 @@ const Contact = () => {
                         name="checkIn"
                         value={formData.checkIn}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ikaya-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent"
                         required
                       />
                     </div>
@@ -133,7 +132,7 @@ const Contact = () => {
                         name="checkOut"
                         value={formData.checkOut}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ikaya-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent"
                         required
                       />
                     </div>
@@ -146,7 +145,7 @@ const Contact = () => {
                       name="guests"
                       value={formData.guests}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ikaya-600 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent"
                       required
                     >
                       <option value="">Select number of guests</option>
@@ -166,7 +165,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ikaya-600 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent"
                       placeholder="Any special requirements or questions?"
                     ></textarea>
                   </div>
@@ -174,7 +173,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-ikaya-600 hover:bg-ikaya-700 text-white py-3 rounded-md font-medium transition-colors flex justify-center items-center"
+                    className="w-full bg-coastal-green hover:bg-coastal-green/90 text-white py-3 rounded-md font-medium transition-colors flex justify-center items-center"
                   >
                     {isSubmitting ? (
                       <>
@@ -193,45 +192,45 @@ const Contact = () => {
           
           <div className="flex flex-col space-y-6">
             <div className="bg-white rounded-lg shadow-smooth p-8">
-              <h3 className="text-2xl font-serif font-semibold text-ikaya-800 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-serif font-semibold mb-6" style={{color: '#5f7f61'}}>Contact Information</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="bg-ikaya-100 rounded-full h-10 w-10 flex items-center justify-center mt-1">
-                    <Phone className="text-ikaya-700" size={20} />
+                  <div className="bg-coastal-cream rounded-full h-10 w-10 flex items-center justify-center mt-1">
+                    <Phone style={{color: '#5f7f61'}} size={20} />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-ikaya-800">Phone</h4>
+                    <h4 className="text-lg font-medium" style={{color: '#5f7f61'}}>Phone</h4>
                     <p className="text-gray-600">+27 82 123 4567</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-ikaya-100 rounded-full h-10 w-10 flex items-center justify-center mt-1">
-                    <Mail className="text-ikaya-700" size={20} />
+                  <div className="bg-coastal-cream rounded-full h-10 w-10 flex items-center justify-center mt-1">
+                    <Mail style={{color: '#5f7f61'}} size={20} />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-ikaya-800">Email</h4>
-                    <p className="text-gray-600">bookings@ikayagreen.co.za</p>
+                    <h4 className="text-lg font-medium" style={{color: '#5f7f61'}}>Email</h4>
+                    <p className="text-gray-600">ikayapsj2@gmail.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-ikaya-100 rounded-full h-10 w-10 flex items-center justify-center mt-1">
-                    <MapPin className="text-ikaya-700" size={20} />
+                  <div className="bg-coastal-cream rounded-full h-10 w-10 flex items-center justify-center mt-1">
+                    <MapPin style={{color: '#5f7f61'}} size={20} />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-ikaya-800">Address</h4>
-                    <p className="text-gray-600">123 Main Road<br />Port St Johns<br />Eastern Cape, 5120<br />South Africa</p>
+                    <h4 className="text-lg font-medium" style={{color: '#5f7f61'}}>Address</h4>
+                    <p className="text-gray-600">Second Beach Road<br />Port St Johns<br />Eastern Cape, 5120<br />South Africa</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-ikaya-100 rounded-full h-10 w-10 flex items-center justify-center mt-1">
-                    <Calendar className="text-ikaya-700" size={20} />
+                  <div className="bg-coastal-cream rounded-full h-10 w-10 flex items-center justify-center mt-1">
+                    <Calendar style={{color: '#5f7f61'}} size={20} />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-ikaya-800">Check-in/Check-out</h4>
+                    <h4 className="text-lg font-medium" style={{color: '#5f7f61'}}>Check-in/Check-out</h4>
                     <p className="text-gray-600">Check-in: 2:00 PM - 8:00 PM<br />Check-out: By 10:00 AM</p>
                   </div>
                 </div>
@@ -239,7 +238,7 @@ const Contact = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-smooth p-8 flex-1">
-              <h3 className="text-2xl font-serif font-semibold text-ikaya-800 mb-6">Location</h3>
+              <h3 className="text-2xl font-serif font-semibold mb-6" style={{color: '#5f7f61'}}>Location</h3>
               
               <div className="h-64 w-full bg-gray-200 rounded-lg overflow-hidden">
                 <iframe 
@@ -250,7 +249,7 @@ const Contact = () => {
                   allowFullScreen 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="iKaya Green Getaway Location"
+                  title="Ikaya Accommodation PSJ Location"
                 ></iframe>
               </div>
             </div>

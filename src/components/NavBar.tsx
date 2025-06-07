@@ -35,14 +35,14 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl md:text-3xl font-heading font-bold" style={{color: '#7ea07d'}}>
-            Ikaya Accommodation <span style={{color: '#7ea07d'}}>PSJ</span>
+          <a href="#" className="text-2xl md:text-3xl font-heading font-bold" style={{color: '#5f7f61'}}>
+            Ikaya Accommodation <span style={{color: '#5f7f61'}}>PSJ</span>
           </a>
 
           {/* Mobile menu button */}
           <button 
             className="lg:hidden hover:opacity-75"
-            style={{color: '#7ea07d'}}
+            style={{color: '#5f7f61'}}
             onClick={toggleMenu}
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -52,10 +52,11 @@ const NavBar = () => {
           {/* Desktop menu */}
           <div className="hidden lg:flex space-x-8 items-center">
             <a href="#home" className="text-black hover:opacity-75 font-medium">Home</a>
-            <a href="#about" className="text-black hover:opacity-75 font-medium">About</a>
-            <a href="#rooms" className="text-black hover:opacity-75 font-medium">Rooms</a>
-            <a href="#amenities" className="text-black hover:opacity-75 font-medium">Amenities</a>
-            <a href="#contact" className="text-black hover:opacity-75 font-medium">Contact</a>
+            <a href="#guest-registry" className="text-black hover:opacity-75 font-medium">Guest Registry</a>
+            <a href="#guest-information" className="text-black hover:opacity-75 font-medium">Guest Information</a>
+            <a href="#units" className="text-black hover:opacity-75 font-medium">Our Units</a>
+            <a href="#local-attractions" className="text-black hover:opacity-75 font-medium">Local Attractions</a>
+            <a href="#contact" className="text-black hover:opacity-75 font-medium">Contact Us</a>
             <a 
               href="#contact" 
               className="bg-coastal-green text-white px-5 py-2 rounded-md hover:bg-coastal-green/90 transition-colors"
@@ -71,10 +72,11 @@ const NavBar = () => {
         <div className="lg:hidden bg-white absolute top-full left-0 w-full shadow-md animate-fade-in">
           <div className="flex flex-col py-4 px-6 space-y-4">
             <a href="#home" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="#about" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>About</a>
-            <a href="#rooms" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Rooms</a>
-            <a href="#amenities" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Amenities</a>
-            <a href="#contact" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a href="#guest-registry" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Guest Registry</a>
+            <a href="#guest-information" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Guest Information</a>
+            <a href="#units" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Our Units</a>
+            <a href="#local-attractions" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Local Attractions</a>
+            <a href="#contact" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
             <a 
               href="#contact" 
               className="bg-coastal-green text-white px-5 py-2 rounded-md hover:bg-coastal-green/90 transition-colors text-center"

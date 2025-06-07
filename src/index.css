@@ -16,36 +16,36 @@
     --popover: 255 255 255;
     --popover-foreground: 0 0 0;
 
-    --primary: 126 160 125; /* #7ea07d */
+    --primary: 95 127 97; /* darker green #5f7f61 */
     --primary-foreground: 255 255 255;
 
-    --secondary: 126 160 125; /* #7ea07d */
+    --secondary: 95 127 97; /* darker green #5f7f61 */
     --secondary-foreground: 255 255 255;
 
     --muted: 239 233 220; /* #efe9dc */
     --muted-foreground: 0 0 0;
 
-    --accent: 126 160 125; /* #7ea07d */
+    --accent: 95 127 97; /* darker green #5f7f61 */
     --accent-foreground: 255 255 255;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 126 160 125;
-    --input: 126 160 125;
-    --ring: 126 160 125;
+    --border: 95 127 97;
+    --input: 95 127 97;
+    --ring: 95 127 97;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 126 160 125;
+    --background: 95 127 97;
     --foreground: 255 255 255;
 
-    --card: 126 160 125;
+    --card: 95 127 97;
     --card-foreground: 255 255 255;
 
-    --popover: 126 160 125;
+    --popover: 95 127 97;
     --popover-foreground: 255 255 255;
 
     --primary: 239 233 220;
@@ -54,7 +54,7 @@
     --secondary: 239 233 220;
     --secondary-foreground: 0 0 0;
 
-    --muted: 126 160 125;
+    --muted: 95 127 97;
     --muted-foreground: 255 255 255;
 
     --accent: 239 233 220;
@@ -82,11 +82,11 @@
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #7ea07d;
+    color: #5f7f61;
   }
   .subheading {
     font-family: 'Lora', serif;
-    color: #7ea07d;
+    color: #5f7f61;
   }
 }
 
@@ -97,7 +97,7 @@
 .section-title {
   @apply text-3xl md:text-4xl font-semibold mb-8 text-center;
   font-family: 'Josefin Sans', sans-serif;
-  color: #7ea07d;
+  color: #5f7f61;
 }
 
 .shadow-smooth {

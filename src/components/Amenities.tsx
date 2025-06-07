@@ -37,9 +37,9 @@ const amenitiesData = [
 
 const Amenities = () => {
   return (
-    <section id="amenities" className="section-padding bg-coastal-cream">
+    <section id="amenities" className="section-padding bg-coastal-brown">
       <div className="container mx-auto">
-        <h2 className="section-title">Guest <span style={{color: '#7ea07d'}}>Amenities</span></h2>
+        <h2 className="section-title text-white">Guest <span className="text-white">Amenities</span></h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {amenitiesData.map((amenity, index) => (
@@ -48,9 +48,9 @@ const Amenities = () => {
               className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all"
             >
               <div className="bg-coastal-cream rounded-full h-14 w-14 flex items-center justify-center mb-4">
-                <amenity.icon style={{color: '#7ea07d'}} size={24} />
+                <amenity.icon style={{color: '#5f7f61'}} size={24} />
               </div>
-              <h3 className="text-xl font-subheading font-semibold mb-2" style={{color: '#7ea07d'}}>{amenity.name}</h3>
+              <h3 className="text-xl font-subheading font-semibold mb-2" style={{color: '#5f7f61'}}>{amenity.name}</h3>
               <p className="text-black font-body">{amenity.description}</p>
             </div>
           ))}

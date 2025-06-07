@@ -14,7 +14,9 @@ const Index = () => {
       <NavBar />
       <Hero />
       <About />
-      <Rooms />
+      <div id="units">
+        <Rooms />
+      </div>
       <Amenities />
       <Contact />
       <Footer />

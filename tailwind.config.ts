@@ -53,10 +53,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Simplified brand colors
+				// Brand colors
 				'coastal': {
-					green: '#7ea07d',
+					green: '#5f7f61',
 					cream: '#efe9dc',
+					brown: '#a47c48',
 				},
 			},
 			borderRadius: {
