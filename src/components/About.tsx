@@ -4,63 +4,64 @@ import { Check } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-coastal-cream">
       <div className="container mx-auto">
-        <h2 className="section-title">About <span className="text-ikaya-green-500">Ikaya Accommodation PSJ</span></h2>
+        <h2 className="section-title">About <span style={{color: '#7ea07d'}}>Ikaya Accommodation PSJ</span></h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-              alt="Ikaya Accommodation PSJ Exterior" 
+              src="/lovable-uploads/f4d92ddc-603f-4761-afd1-fb9db1fd3aa7.png" 
+              alt="Ikaya Accommodation PSJ - Second Beach, Port St Johns" 
               className="rounded-lg shadow-lg w-full h-[400px] object-cover"
             />
-            <div className="absolute -bottom-6 -right-6 bg-ikaya-100 p-6 rounded-lg shadow-md hidden md:block">
-              <p className="font-subheading text-xl text-ikaya-blue-500">
-                "Experience the beauty of<br />Port St Johns with us"
+            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-md hidden md:block">
+              <p className="font-subheading text-xl" style={{color: '#7ea07d'}}>
+                "Experience the Wild Coast<br />at Second Beach"
               </p>
             </div>
           </div>
           
           <div className="space-y-6">
-            <h3 className="text-2xl font-subheading font-semibold text-ikaya-blue-500">Your Home Away From Home</h3>
+            <h3 className="text-2xl font-subheading font-semibold" style={{color: '#7ea07d'}}>Your Home Away From Home</h3>
             
-            <p className="text-gray-700 font-body">
-              Welcome to Ikaya Accommodation PSJ, a tranquil oasis nestled in the heart of Port St Johns. 
-              Our guest house offers a perfect blend of comfort, convenience, and connection to nature, 
-              making it an ideal destination for both leisure and business travelers.
+            <p className="text-black font-body">
+              Nestled in the serene cove of Second Beach, Port St Johns, Ikaya Accommodation PSJ invites you to unwind along South Africa's breathtaking Wild Coast. Whether you're a fisherman chasing the perfect catch, a beach lover soaking in the sun, or a road tripper exploring the magic of the Eastern Cape, Ikaya is your ideal coastal home away from home.
             </p>
             
-            <p className="text-gray-700 font-body">
-              Surrounded by lush tropical vegetation and just minutes away from pristine beaches,
-              our accommodation provides a peaceful retreat where you can unwind and recharge.
+            <p className="text-black font-body">
+              We offer rustic, comfortable self-catering units designed for every kind of traveler — from couples seeking a peaceful retreat to families and large groups looking for adventure. Choose from cozy en-suite double rooms to a spacious cottage that sleep up to 8 guests.
+            </p>
+
+            <p className="text-black font-body">
+              Our charm lies in simplicity — no frills, just authentic coastal living, warm hospitality, and the call of the ocean on your doorstep.
             </p>
             
             <div className="space-y-3 mt-6">
               <div className="flex items-start gap-3">
-                <Check className="text-ikaya-green-500 mt-1 flex-shrink-0" size={20} />
-                <p className="text-gray-700 font-body">Centrally located in Port St Johns, close to local attractions</p>
+                <Check className="mt-1 flex-shrink-0" style={{color: '#7ea07d'}} size={20} />
+                <p className="text-black font-body">Located at beautiful Second Beach, Port St Johns</p>
               </div>
               
               <div className="flex items-start gap-3">
-                <Check className="text-ikaya-green-500 mt-1 flex-shrink-0" size={20} />
-                <p className="text-gray-700 font-body">Spacious rooms with modern amenities and natural views</p>
+                <Check className="mt-1 flex-shrink-0" style={{color: '#7ea07d'}} size={20} />
+                <p className="text-black font-body">Self-catering units for couples, families, and groups</p>
               </div>
               
               <div className="flex items-start gap-3">
-                <Check className="text-ikaya-green-500 mt-1 flex-shrink-0" size={20} />
-                <p className="text-gray-700 font-body">Personalized service to make your stay memorable</p>
+                <Check className="mt-1 flex-shrink-0" style={{color: '#7ea07d'}} size={20} />
+                <p className="text-black font-body">Authentic coastal living with warm hospitality</p>
               </div>
               
               <div className="flex items-start gap-3">
-                <Check className="text-ikaya-green-500 mt-1 flex-shrink-0" size={20} />
-                <p className="text-gray-700 font-body">Perfect for both short getaways and extended stays</p>
+                <Check className="mt-1 flex-shrink-0" style={{color: '#7ea07d'}} size={20} />
+                <p className="text-black font-body">Perfect for fishing, beach activities, and road trips</p>
               </div>
             </div>
             
             <a 
               href="#contact" 
-              className="inline-block bg-ikaya-green-500 hover:bg-ikaya-green-600 text-white px-6 py-3 rounded-md mt-4 transition-colors"
+              className="inline-block bg-coastal-green hover:bg-coastal-green/90 text-white px-6 py-3 rounded-md mt-4 transition-colors"
             >
               Contact Us
             </a>

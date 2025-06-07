@@ -37,39 +37,39 @@ const amenitiesData = [
 
 const Amenities = () => {
   return (
-    <section id="amenities" className="section-padding bg-white">
+    <section id="amenities" className="section-padding bg-coastal-cream">
       <div className="container mx-auto">
-        <h2 className="section-title">Guest <span className="text-ikaya-green-500">Amenities</span></h2>
+        <h2 className="section-title">Guest <span style={{color: '#7ea07d'}}>Amenities</span></h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {amenitiesData.map((amenity, index) => (
             <div 
               key={index} 
-              className="bg-ikaya-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-all"
+              className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all"
             >
-              <div className="bg-ikaya-aqua-100 rounded-full h-14 w-14 flex items-center justify-center mb-4">
-                <amenity.icon className="text-ikaya-blue-500" size={24} />
+              <div className="bg-coastal-cream rounded-full h-14 w-14 flex items-center justify-center mb-4">
+                <amenity.icon style={{color: '#7ea07d'}} size={24} />
               </div>
-              <h3 className="text-xl font-subheading font-semibold text-ikaya-blue-500 mb-2">{amenity.name}</h3>
-              <p className="text-gray-600 font-body">{amenity.description}</p>
+              <h3 className="text-xl font-subheading font-semibold mb-2" style={{color: '#7ea07d'}}>{amenity.name}</h3>
+              <p className="text-black font-body">{amenity.description}</p>
             </div>
           ))}
         </div>
         
-        <div className="mt-16 bg-ikaya-blue-500 rounded-lg overflow-hidden shadow-lg">
+        <div className="mt-16 bg-coastal-green rounded-lg overflow-hidden shadow-lg">
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
               <h3 className="text-2xl md:text-3xl font-subheading font-semibold text-white mb-4">
                 Experience Comfort & Convenience
               </h3>
-              <p className="text-ikaya-100 mb-6 font-body">
+              <p className="text-white mb-6 font-body">
                 At Ikaya Accommodation PSJ, we go above and beyond to ensure your stay is comfortable,
                 convenient, and memorable. Our range of amenities is designed to enhance your experience
                 and make you feel at home.
               </p>
               <a 
                 href="#contact" 
-                className="bg-ikaya-green-500 text-white hover:bg-ikaya-green-600 px-6 py-3 rounded-md inline-block transition-colors w-max font-medium"
+                className="bg-white text-coastal-green hover:bg-white/90 px-6 py-3 rounded-md inline-block transition-colors w-max font-medium"
               >
                 Book Your Stay
               </a>
