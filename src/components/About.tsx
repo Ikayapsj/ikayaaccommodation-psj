@@ -8,11 +8,16 @@ const About = () => {
       <div className="container mx-auto">
         <h2 className="section-title" style={{color: '#5f7f61'}}>About <span style={{color: '#5f7f61'}}>Ikaya Accommodation PSJ</span></h2>
         
-        <div className="grid md:grid-cols-3 gap-8 items-start">
-          <div className="relative">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="space-y-6">
             <img 
               src="/lovable-uploads/f4d92ddc-603f-4761-afd1-fb9db1fd3aa7.png" 
               alt="Ikaya Accommodation PSJ - Second Beach, Port St Johns" 
+              className="rounded-lg shadow-lg w-full h-[300px] object-cover"
+            />
+            <img 
+              src="/lovable-uploads/be2f7b59-fd66-415d-97b0-d8ebfee245c6.png" 
+              alt="Ikaya Accommodation PSJ - Additional View" 
               className="rounded-lg shadow-lg w-full h-[300px] object-cover"
             />
           </div>
@@ -60,18 +65,13 @@ const About = () => {
             >
               Contact Us
             </a>
-          </div>
 
-          <div className="relative">
-            <img 
-              src="/lovable-uploads/309c289d-fe6f-49b5-b74b-df648ad53151.png" 
-              alt="Ikaya Accommodation PSJ - Coastal Experience" 
-              className="rounded-lg shadow-lg w-full h-[300px] object-cover"
-            />
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-md hidden md:block">
-              <p className="font-subheading text-xl" style={{color: '#7ea07d'}}>
-                "Experience the Wild Coast<br />at Second Beach"
-              </p>
+            <div className="relative mt-8">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <p className="font-subheading text-xl" style={{color: '#7ea07d'}}>
+                  "Experience the Wild Coast<br />at Second Beach"
+                </p>
+              </div>
             </div>
           </div>
         </div>
