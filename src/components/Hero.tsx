@@ -14,8 +14,8 @@ const Hero = () => {
             backgroundPosition: 'center',
           }}
         >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+          {/* Increased overlay opacity for better text readability */}
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           
           {/* Content */}
           <div className="container mx-auto px-4 h-full flex items-center justify-center">

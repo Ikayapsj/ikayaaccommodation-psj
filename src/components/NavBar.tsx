@@ -35,9 +35,8 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl md:text-3xl font-heading font-bold" style={{color: '#5f7f61'}}>
-            Ikaya Accommodation <span style={{color: '#5f7f61'}}>PSJ</span>
-          </a>
+          {/* Empty div to maintain layout structure */}
+          <div></div>
 
           {/* Mobile menu button */}
           <button 

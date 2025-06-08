@@ -1,17 +1,17 @@
 
 import React from 'react';
-import { Wifi, Coffee, MapPin, Car, Bath, Utensils } from 'lucide-react';
+import { Wifi, MapPin, Car, Bath, Utensils, TreePine } from 'lucide-react';
 
 const amenitiesData = [
   {
     name: "Free WiFi",
-    description: "High-speed internet access throughout the property",
+    description: "Internet access across the property",
     icon: Wifi
   },
   {
-    name: "Breakfast",
-    description: "Continental breakfast available daily",
-    icon: Coffee
+    name: "Beach Access",
+    description: "Beach access and nature reserve adjacent to the property",
+    icon: TreePine
   },
   {
     name: "Convenient Location",
@@ -30,7 +30,7 @@ const amenitiesData = [
   },
   {
     name: "Dining Options",
-    description: "Restaurants and cafés within walking distance",
+    description: "Local restaurants a short drive nearby",
     icon: Utensils
   }
 ];
@@ -60,12 +60,10 @@ const Amenities = () => {
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
               <h3 className="text-2xl md:text-3xl font-subheading font-semibold text-white mb-4">
-                Experience Comfort & Convenience
+                Enjoy Rustic Comfort and Nature at your Doorstep
               </h3>
               <p className="text-white mb-6 font-body">
-                At Ikaya Accommodation PSJ, we go above and beyond to ensure your stay is comfortable,
-                convenient, and memorable. Our range of amenities is designed to enhance your experience
-                and make you feel at home.
+                Nestled in the bay adjacent to Silaka Nature Reserve, our accommodation allows you to unwind in the natural beauty that the majestic Transkei has to offer.
               </p>
               <a 
                 href="#contact" 
@@ -77,7 +75,7 @@ const Amenities = () => {
             <div className="h-64 md:h-auto">
               <img 
                 src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                alt="Ikaya Accommodation PSJ Amenities" 
+                alt="Ikaya Accommodation PSJ - Nature and Comfort" 
                 className="w-full h-full object-cover"
               />
             </div>
