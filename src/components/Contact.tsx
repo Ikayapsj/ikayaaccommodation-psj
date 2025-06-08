@@ -48,7 +48,7 @@ const Contact = () => {
   };
   return <section id="contact" className="section-padding bg-coastal-brown">
       <div className="container mx-auto">
-        <h2 className="section-title text-slate-50">Book Your <span className="text-white">Stay</span></h2>
+        <h2 className="section-title text-white">Book Your <span className="text-white">Stay</span></h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           <div>
