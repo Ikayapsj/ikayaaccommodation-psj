@@ -242,7 +242,7 @@ const Contact = () => {
               
               <div className="h-64 w-full bg-gray-200 rounded-lg overflow-hidden">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53170.66912988834!2d29.513181207638125!3d-31.62384342252258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5e6b27a942c3cd%3A0xbd60ce5303d9bdd8!2sPort%20St%20Johns%2C%205120%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1712684818674!5m2!1sen!2sus" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1521.0001449822795!2d29.512517!3d-31.6508474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5efbb4680744a1%3A0x4af2e2d4c31ab1b6!2sIkaya%20Accommodation%20PSJ!5e0!3m2!1sen!2sus!4v1712684818674!5m2!1sen!2sus"
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

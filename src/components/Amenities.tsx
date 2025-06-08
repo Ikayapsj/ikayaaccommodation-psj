@@ -74,7 +74,7 @@ const Amenities = () => {
             </div>
             <div className="h-64 md:h-auto">
               <img 
-                src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                src="/lovable-uploads/1eefca4c-ac28-4925-93f8-9584ad6cbcd5.png" 
                 alt="Ikaya Accommodation PSJ - Nature and Comfort" 
                 className="w-full h-full object-cover"
               />

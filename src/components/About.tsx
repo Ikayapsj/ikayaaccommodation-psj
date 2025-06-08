@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-coastal-cream">
       <div className="container mx-auto">
-        <h2 className="section-title">About <span style={{color: '#7ea07d'}}>Ikaya Accommodation PSJ</span></h2>
+        <h2 className="section-title" style={{color: '#5f7f61'}}>About <span style={{color: '#5f7f61'}}>Ikaya Accommodation PSJ</span></h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-subheading font-semibold mb-4" style={{color: '#5f7f61'}}>Ikaya Accommodation PSJ</h3>
             <p className="text-black mb-4 font-body">
-              Your tranquil escape in the heart of Port St Johns. Experience comfort, convenience, and natural beauty.
+              Experience comfort, convenience, and natural beauty.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -32,6 +32,15 @@ const Footer = () => {
                 style={{color: '#5f7f61'}}
               >
                 <Instagram size={24} />
+              </a>
+              <a 
+                href="https://wa.me/27720183007" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:opacity-75 transition-colors"
+                style={{color: '#5f7f61'}}
+              >
+                <MessageCircle size={24} />
               </a>
             </div>
           </div>

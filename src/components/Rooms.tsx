@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Bed, Users, Check } from 'lucide-react';
 
@@ -17,7 +16,7 @@ const roomsData = [
       "Tea/coffee making facilities",
       "Shared kitchen space"
     ],
-    price: "R750",
+    price: "from R750",
   },
   {
     id: 2,
@@ -34,7 +33,7 @@ const roomsData = [
       "BBQ facilities",
       "Pet-friendly"
     ],
-    price: "R950",
+    price: "from R900",
   },
   {
     id: 3,
@@ -52,7 +51,7 @@ const roomsData = [
       "Ocean view",
       "Pet-friendly"
     ],
-    price: "R1100",
+    price: "from R900",
   },
   {
     id: 4,
@@ -69,7 +68,7 @@ const roomsData = [
       "Lounge area",
       "BBQ area with sea view"
     ],
-    price: "R2500",
+    price: "from R1900",
   }
 ];
 
