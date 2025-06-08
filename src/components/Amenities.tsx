@@ -67,7 +67,8 @@ const Amenities = () => {
               </p>
               <a 
                 href="#contact" 
-                className="bg-white text-coastal-green hover:bg-white/90 px-6 py-3 rounded-md inline-block transition-colors w-max font-medium"
+                className="bg-white text-coastal-green hover:bg-white/90 px-6 py-3 rounded-md inline-block transition-colors w-max font-medium text-white"
+                style={{color: 'white'}}
               >
                 Book Your Stay
               </a>

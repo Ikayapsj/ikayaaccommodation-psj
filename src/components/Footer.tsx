@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Facebook, Instagram, MessageCircle } from 'lucide-react';
+import Testimonials from './Testimonials';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -46,14 +47,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-subheading font-semibold mb-4" style={{color: '#5f7f61'}}>Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#home" className="text-black hover:opacity-75 transition-colors font-body">Home</a></li>
-              <li><a href="#about" className="text-black hover:opacity-75 transition-colors font-body">About</a></li>
-              <li><a href="#units" className="text-black hover:opacity-75 transition-colors font-body">Our Units</a></li>
-              <li><a href="#amenities" className="text-black hover:opacity-75 transition-colors font-body">Amenities</a></li>
-              <li><a href="#contact" className="text-black hover:opacity-75 transition-colors font-body">Contact</a></li>
-            </ul>
+            <Testimonials />
           </div>
         </div>
         
