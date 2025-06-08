@@ -5,51 +5,71 @@ import { Bed, Users, Check } from 'lucide-react';
 const roomsData = [
   {
     id: 1,
-    name: "Standard Room",
-    description: "Comfortable room with essential amenities for a relaxing stay.",
-    image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Double Room with Garden View",
+    description: "Comfortable room with an en-suite bathroom and a shared kitchen space.",
+    image: "/lovable-uploads/f5ba014e-2406-4f1b-9825-079b1f18e83e.png",
     beds: "1 Double Bed",
     occupancy: "2 Guests",
     features: [
       "En-suite bathroom",
-      "Air conditioning",
+      "Ceiling fan",
       "Free WiFi",
-      "Tea/coffee making facilities"
+      "Tea/coffee making facilities",
+      "Shared kitchen space"
     ],
-    price: "R850",
+    price: "R750",
   },
   {
     id: 2,
-    name: "Deluxe Room",
-    description: "Spacious room with additional amenities and beautiful views.",
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    beds: "1 Queen Bed",
-    occupancy: "2 Guests",
+    name: "Triple Room with Private Garden",
+    description: "Spacious room with a private garden.",
+    image: "/lovable-uploads/b9e594b7-8a69-440a-a545-61f1d5de34b9.png",
+    beds: "1 Double Bed + 1 Single Bed",
+    occupancy: "3 Guests",
     features: [
-      "En-suite bathroom with shower",
-      "Air conditioning",
+      "Private garden",
+      "Fans",
       "Free WiFi",
-      "Tea/coffee making facilities",
-      "Work desk"
+      "Full kitchen",
+      "BBQ facilities",
+      "Pet-friendly"
     ],
     price: "R950",
   },
   {
     id: 3,
-    name: "Family Suite",
-    description: "Perfect for families with separate sleeping areas and ample space.",
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    beds: "1 Queen Bed + 2 Single Beds",
-    occupancy: "4 Guests",
+    name: "Double Room with Sea View",
+    description: "Includes a deck with BBQ facilities and a lovely ocean view.",
+    image: "/lovable-uploads/bf9e6838-82bd-467e-9807-c6659e1831af.png",
+    beds: "1 Double Bed",
+    occupancy: "2 Guests",
     features: [
       "En-suite bathroom",
-      "Air conditioning",
+      "Fan",
       "Free WiFi",
-      "Tea/coffee making facilities",
-      "Mini fridge",
-      "Lounge area"
+      "Full kitchen",
+      "Deck with BBQ facilities",
+      "Ocean view",
+      "Pet-friendly"
     ],
-    price: "R1250",
+    price: "R1100",
+  },
+  {
+    id: 4,
+    name: "Family Cottage",
+    description: "Perfect for families and groups of friends.",
+    image: "/lovable-uploads/787a7038-29bf-42c0-973c-d3463b97ec8a.png",
+    beds: "3 Double Beds + 4 Single Beds",
+    occupancy: "6 Adults + 4 Children",
+    features: [
+      "3 bathrooms",
+      "Sea view",
+      "Free WiFi",
+      "Full kitchen facilities",
+      "Lounge area",
+      "BBQ area with sea view"
+    ],
+    price: "R2500",
   }
 ];
 
@@ -57,11 +77,11 @@ const Rooms = () => {
   const [activeRoom, setActiveRoom] = useState<number | null>(null);
 
   return (
-    <section id="rooms" className="section-padding bg-ikaya-100">
+    <section id="rooms" className="section-padding bg-coastal-cream">
       <div className="container mx-auto">
-        <h2 className="section-title">Our <span className="text-ikaya-green-500">Accommodations</span></h2>
+        <h2 className="section-title">Our <span className="text-coastal-green">Units</span></h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {roomsData.map((room) => (
             <div 
               key={room.id} 
@@ -73,30 +93,30 @@ const Rooms = () => {
                   alt={room.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-ikaya-green-500 text-white px-3 py-1 rounded-md text-sm font-medium">
+                <div className="absolute top-4 right-4 bg-coastal-green text-white px-3 py-1 rounded-md text-sm font-medium">
                   {room.price} per night
                 </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-subheading font-semibold text-ikaya-blue-500 mb-2">{room.name}</h3>
+                <h3 className="text-xl font-subheading font-semibold text-coastal-green mb-2">{room.name}</h3>
                 <p className="text-gray-600 mb-4 font-body">{room.description}</p>
                 
                 <div className="flex space-x-4 mb-4">
                   <div className="flex items-center">
-                    <Bed size={18} className="text-ikaya-green-500 mr-2" />
+                    <Bed size={18} className="text-coastal-green mr-2" />
                     <span className="text-sm text-gray-600 font-body">{room.beds}</span>
                   </div>
                   
                   <div className="flex items-center">
-                    <Users size={18} className="text-ikaya-green-500 mr-2" />
+                    <Users size={18} className="text-coastal-green mr-2" />
                     <span className="text-sm text-gray-600 font-body">{room.occupancy}</span>
                   </div>
                 </div>
                 
                 <button 
                   onClick={() => setActiveRoom(activeRoom === room.id ? null : room.id)}
-                  className="text-ikaya-blue-500 font-medium hover:text-ikaya-green-500 flex items-center"
+                  className="text-coastal-green font-medium hover:text-coastal-brown flex items-center"
                 >
                   View features
                   <svg 
@@ -117,7 +137,7 @@ const Rooms = () => {
                   <div className="mt-4 space-y-2 animate-fade-in">
                     {room.features.map((feature, index) => (
                       <div key={index} className="flex items-start gap-2">
-                        <Check size={16} className="text-ikaya-green-500 mt-1 flex-shrink-0" />
+                        <Check size={16} className="text-coastal-green mt-1 flex-shrink-0" />
                         <span className="text-sm text-gray-600 font-body">{feature}</span>
                       </div>
                     ))}
@@ -126,7 +146,7 @@ const Rooms = () => {
                 
                 <a
                   href="#contact"
-                  className="mt-6 block text-center bg-ikaya-green-500 hover:bg-ikaya-green-600 text-white py-2 rounded-md transition-colors"
+                  className="mt-6 block text-center bg-coastal-green hover:bg-coastal-green/90 text-white py-2 rounded-md transition-colors"
                 >
                   Book Now
                 </a>
