@@ -43,8 +43,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div>
-      <h3 className="text-xl font-subheading font-semibold mb-4" style={{color: '#5f7f61'}}>Guest Testimonials</h3>
+    <div className="text-center">
+      <h3 className="text-xl font-subheading font-semibold mb-6" style={{color: '#5f7f61'}}>Guest Testimonials</h3>
       
       <Carousel className="w-full max-w-xs mx-auto">
         <CarouselContent>

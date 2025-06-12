@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="container mx-auto px-4 h-full flex items-center justify-center">
             <div className="text-center max-w-4xl mx-auto z-10 relative">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-white font-bold mb-4 drop-shadow-lg">
-                Welcome to Ikaya Accommodation PSJ
+                Welcome to Ikaya<br />Accommodation PSJ
               </h1>
               <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-lg font-subheading">
                 Your escape along South Africa's breathtaking Wild Coast

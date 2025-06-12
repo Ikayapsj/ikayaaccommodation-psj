@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -46,7 +47,8 @@ const Contact = () => {
       }, 5000);
     }, 1500);
   };
-  return <section id="contact" className="section-padding bg-coastal-brown">
+  return (
+    <section id="contact" className="py-12 px-4 sm:px-6 md:py-16 lg:px-8 bg-coastal-brown">
       <div className="container mx-auto">
         <h2 className="section-title text-white">Book Your <span className="text-white">Stay</span></h2>
         
@@ -204,6 +206,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

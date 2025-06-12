@@ -16,7 +16,7 @@ const About = () => {
               className="rounded-lg shadow-lg w-full h-[300px] object-cover"
             />
             <img 
-              src="/lovable-uploads/be2f7b59-fd66-415d-97b0-d8ebfee245c6.png" 
+              src="/lovable-uploads/309c289d-fe6f-49b5-b74b-df648ad53151.png" 
               alt="Ikaya Accommodation PSJ - Additional View" 
               className="rounded-lg shadow-lg w-full h-[300px] object-cover"
             />
@@ -65,14 +65,6 @@ const About = () => {
             >
               Contact Us
             </a>
-
-            <div className="relative mt-8">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="font-subheading text-xl" style={{color: '#7ea07d'}}>
-                  "Experience the Wild Coast<br />at Second Beach"
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
