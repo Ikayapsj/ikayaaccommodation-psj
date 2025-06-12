@@ -41,7 +41,7 @@ const NavBar = () => {
           {/* Mobile menu button */}
           <button 
             className="lg:hidden hover:opacity-75"
-            style={{color: '#5f7f61'}}
+            style={{color: scrolled ? '#5f7f61' : 'white'}}
             onClick={toggleMenu}
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -50,19 +50,18 @@ const NavBar = () => {
 
           {/* Desktop menu */}
           <div className="hidden lg:flex space-x-8 items-center">
-            <a href="#home" className="text-black hover:opacity-75 font-medium">Home</a>
+            <a href="#home" className={cn("hover:opacity-75 font-medium", scrolled ? "text-black" : "text-white")}>Home</a>
             <a 
               href="https://docs.google.com/forms/d/1QsjAYwypGsKD0nQgM6aJ3ki6G1SNBdAL0hEuVBllYj0/edit" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-black hover:opacity-75 font-medium"
+              className={cn("hover:opacity-75 font-medium", scrolled ? "text-black" : "text-white")}
             >
               Guest Registry
             </a>
-            <a href="#guest-information" className="text-black hover:opacity-75 font-medium">Guest Information</a>
-            <a href="#units" className="text-black hover:opacity-75 font-medium">Our Units</a>
-            <a href="#local-attractions" className="text-black hover:opacity-75 font-medium">Local Attractions</a>
-            <a href="#contact" className="text-black hover:opacity-75 font-medium">Contact Us</a>
+            <a href="#units" className={cn("hover:opacity-75 font-medium", scrolled ? "text-black" : "text-white")}>Our Units</a>
+            <a href="#local-attractions" className={cn("hover:opacity-75 font-medium", scrolled ? "text-black" : "text-white")}>Local Attractions</a>
+            <a href="#contact" className={cn("hover:opacity-75 font-medium", scrolled ? "text-black" : "text-white")}>Contact Us</a>
             <a 
               href="#contact" 
               className="bg-coastal-green text-white px-5 py-2 rounded-md hover:bg-coastal-green/90 transition-colors"
@@ -77,20 +76,19 @@ const NavBar = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white absolute top-full left-0 w-full shadow-md animate-fade-in">
           <div className="flex flex-col py-4 px-6 space-y-4">
-            <a href="#home" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Home</a>
+            <a href="#home" className="text-white hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Home</a>
             <a 
               href="https://docs.google.com/forms/d/1QsjAYwypGsKD0nQgM6aJ3ki6G1SNBdAL0hEuVBllYj0/edit" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-black hover:opacity-75 py-2" 
+              className="text-white hover:opacity-75 py-2" 
               onClick={() => setIsMenuOpen(false)}
             >
               Guest Registry
             </a>
-            <a href="#guest-information" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Guest Information</a>
-            <a href="#units" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Our Units</a>
-            <a href="#local-attractions" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Local Attractions</a>
-            <a href="#contact" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
+            <a href="#units" className="text-white hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Our Units</a>
+            <a href="#local-attractions" className="text-white hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Local Attractions</a>
+            <a href="#contact" className="text-white hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
             <a 
               href="#contact" 
               className="bg-coastal-green text-white px-5 py-2 rounded-md hover:bg-coastal-green/90 transition-colors text-center"
