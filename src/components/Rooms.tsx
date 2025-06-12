@@ -1,97 +1,52 @@
 import React, { useState } from 'react';
 import { Bed, Users, Check } from 'lucide-react';
-
-const roomsData = [
-  {
-    id: 1,
-    name: "Double Room with Garden View",
-    description: "Comfortable room with an en-suite bathroom and a shared kitchen space.",
-    image: "/lovable-uploads/f5ba014e-2406-4f1b-9825-079b1f18e83e.png",
-    beds: "1 Double Bed",
-    occupancy: "2 Guests",
-    features: [
-      "En-suite bathroom",
-      "Ceiling fan",
-      "Free WiFi",
-      "Tea/coffee making facilities",
-      "Shared kitchen space"
-    ],
-    price: "from R750",
-  },
-  {
-    id: 2,
-    name: "Triple Room with Private Garden",
-    description: "Spacious room with a private garden.",
-    image: "/lovable-uploads/b9e594b7-8a69-440a-a545-61f1d5de34b9.png",
-    beds: "1 Double Bed + 1 Single Bed",
-    occupancy: "3 Guests",
-    features: [
-      "Private garden",
-      "Fans",
-      "Free WiFi",
-      "Full kitchen",
-      "BBQ facilities",
-      "Pet-friendly"
-    ],
-    price: "from R900",
-  },
-  {
-    id: 3,
-    name: "Double Room with Sea View",
-    description: "Includes a deck with BBQ facilities and a lovely ocean view.",
-    image: "/lovable-uploads/bf9e6838-82bd-467e-9807-c6659e1831af.png",
-    beds: "1 Double Bed",
-    occupancy: "2 Guests",
-    features: [
-      "En-suite bathroom",
-      "Fan",
-      "Free WiFi",
-      "Full kitchen",
-      "Deck with BBQ facilities",
-      "Ocean view",
-      "Pet-friendly"
-    ],
-    price: "from R900",
-  },
-  {
-    id: 4,
-    name: "Family Cottage",
-    description: "Perfect for families and groups of friends.",
-    image: "/lovable-uploads/787a7038-29bf-42c0-973c-d3463b97ec8a.png",
-    beds: "3 Double Beds + 4 Single Beds",
-    occupancy: "6 Adults + 4 Children",
-    features: [
-      "3 bathrooms",
-      "Sea view",
-      "Free WiFi",
-      "Full kitchen facilities",
-      "Lounge area",
-      "BBQ area with sea view"
-    ],
-    price: "from R1900",
-  }
-];
-
+const roomsData = [{
+  id: 1,
+  name: "Double Room with Garden View",
+  description: "Comfortable room with an en-suite bathroom and a shared kitchen space.",
+  image: "/lovable-uploads/f5ba014e-2406-4f1b-9825-079b1f18e83e.png",
+  beds: "1 Double Bed",
+  occupancy: "2 Guests",
+  features: ["En-suite bathroom", "Ceiling fan", "Free WiFi", "Tea/coffee making facilities", "Shared kitchen space"],
+  price: "from R750"
+}, {
+  id: 2,
+  name: "Triple Room with Private Garden",
+  description: "Spacious room with a private garden.",
+  image: "/lovable-uploads/b9e594b7-8a69-440a-a545-61f1d5de34b9.png",
+  beds: "1 Double Bed + 1 Single Bed",
+  occupancy: "3 Guests",
+  features: ["Private garden", "Fans", "Free WiFi", "Full kitchen", "BBQ facilities", "Pet-friendly"],
+  price: "from R900"
+}, {
+  id: 3,
+  name: "Double Room with Sea View",
+  description: "Includes a deck with BBQ facilities and a lovely ocean view.",
+  image: "/lovable-uploads/bf9e6838-82bd-467e-9807-c6659e1831af.png",
+  beds: "1 Double Bed",
+  occupancy: "2 Guests",
+  features: ["En-suite bathroom", "Fan", "Free WiFi", "Full kitchen", "Deck with BBQ facilities", "Ocean view", "Pet-friendly"],
+  price: "from R900"
+}, {
+  id: 4,
+  name: "Family Cottage",
+  description: "Perfect for families and groups of friends.",
+  image: "/lovable-uploads/787a7038-29bf-42c0-973c-d3463b97ec8a.png",
+  beds: "3 Double Beds + 4 Single Beds",
+  occupancy: "6 Adults + 4 Children",
+  features: ["3 bathrooms", "Sea view", "Free WiFi", "Full kitchen facilities", "Lounge area", "BBQ area with sea view"],
+  price: "from R1900"
+}];
 const Rooms = () => {
   const [activeRoom, setActiveRoom] = useState<number | null>(null);
-
-  return (
-    <section id="rooms" className="section-padding bg-coastal-cream">
+  return <section id="rooms" className="section-padding bg-coastal-cream">
       <div className="container mx-auto">
-        <h2 className="section-title">Our <span className="text-coastal-green">Units</span></h2>
+        <h2 className="section-title text-coastal-green">Our <span className="text-coastal-green">Units</span></h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {roomsData.map((room) => (
-            <div 
-              key={room.id} 
-              className="bg-white rounded-lg overflow-hidden shadow-smooth hover:shadow-lg transition-all group"
-            >
+          {roomsData.map(room => <div key={room.id} className="bg-white rounded-lg overflow-hidden shadow-smooth hover:shadow-lg transition-all group">
               <div className="relative h-60 overflow-hidden">
-                <img 
-                  src={room.image} 
-                  alt={room.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                <img src={room.image} alt={room.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 right-4 bg-coastal-green text-white px-3 py-1 rounded-md text-sm font-medium">
                   {room.price} per night
                 </div>
@@ -113,49 +68,27 @@ const Rooms = () => {
                   </div>
                 </div>
                 
-                <button 
-                  onClick={() => setActiveRoom(activeRoom === room.id ? null : room.id)}
-                  className="text-coastal-green font-medium hover:text-coastal-brown flex items-center"
-                >
+                <button onClick={() => setActiveRoom(activeRoom === room.id ? null : room.id)} className="text-coastal-green font-medium hover:text-coastal-brown flex items-center">
                   View features
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="20" 
-                    height="20" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2"
-                    className={`ml-2 transition-transform ${activeRoom === room.id ? 'rotate-180' : 'rotate-0'}`}
-                  >
-                    <path d="m6 9 6 6 6-6"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={`ml-2 transition-transform ${activeRoom === room.id ? 'rotate-180' : 'rotate-0'}`}>
+                    <path d="m6 9 6 6 6-6" />
                   </svg>
                 </button>
                 
-                {activeRoom === room.id && (
-                  <div className="mt-4 space-y-2 animate-fade-in">
-                    {room.features.map((feature, index) => (
-                      <div key={index} className="flex items-start gap-2">
+                {activeRoom === room.id && <div className="mt-4 space-y-2 animate-fade-in">
+                    {room.features.map((feature, index) => <div key={index} className="flex items-start gap-2">
                         <Check size={16} className="text-coastal-green mt-1 flex-shrink-0" />
                         <span className="text-sm text-gray-600 font-body">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
+                      </div>)}
+                  </div>}
                 
-                <a
-                  href="#contact"
-                  className="mt-6 block text-center bg-coastal-green hover:bg-coastal-green/90 text-white py-2 rounded-md transition-colors"
-                >
+                <a href="#contact" className="mt-6 block text-center bg-coastal-green hover:bg-coastal-green/90 text-white py-2 rounded-md transition-colors">
                   Book Now
                 </a>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Rooms;
