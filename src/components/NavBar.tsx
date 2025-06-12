@@ -51,7 +51,14 @@ const NavBar = () => {
           {/* Desktop menu */}
           <div className="hidden lg:flex space-x-8 items-center">
             <a href="#home" className="text-black hover:opacity-75 font-medium">Home</a>
-            <a href="#guest-registry" className="text-black hover:opacity-75 font-medium">Guest Registry</a>
+            <a 
+              href="https://docs.google.com/forms/d/1QsjAYwypGsKD0nQgM6aJ3ki6G1SNBdAL0hEuVBllYj0/edit" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-black hover:opacity-75 font-medium"
+            >
+              Guest Registry
+            </a>
             <a href="#guest-information" className="text-black hover:opacity-75 font-medium">Guest Information</a>
             <a href="#units" className="text-black hover:opacity-75 font-medium">Our Units</a>
             <a href="#local-attractions" className="text-black hover:opacity-75 font-medium">Local Attractions</a>
@@ -71,7 +78,15 @@ const NavBar = () => {
         <div className="lg:hidden bg-white absolute top-full left-0 w-full shadow-md animate-fade-in">
           <div className="flex flex-col py-4 px-6 space-y-4">
             <a href="#home" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="#guest-registry" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Guest Registry</a>
+            <a 
+              href="https://docs.google.com/forms/d/1QsjAYwypGsKD0nQgM6aJ3ki6G1SNBdAL0hEuVBllYj0/edit" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-black hover:opacity-75 py-2" 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Guest Registry
+            </a>
             <a href="#guest-information" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Guest Information</a>
             <a href="#units" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Our Units</a>
             <a href="#local-attractions" className="text-black hover:opacity-75 py-2" onClick={() => setIsMenuOpen(false)}>Local Attractions</a>
