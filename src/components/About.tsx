@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-coastal-cream">
+    <section id="about" className="py-12 bg-coastal-cream">
       <div className="container mx-auto">
         <h2 className="section-title" style={{color: '#5f7f61'}}>About <span style={{color: '#5f7f61'}}>Ikaya Accommodation PSJ</span></h2>
         

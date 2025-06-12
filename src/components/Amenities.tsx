@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Wifi, MapPin, Car, Bath, Utensils, TreePine } from 'lucide-react';
 
@@ -36,7 +37,7 @@ const amenitiesData = [
 
 const Amenities = () => {
   return (
-    <section id="amenities" className="section-padding bg-coastal-brown">
+    <section id="amenities" className="py-12 bg-coastal-brown">
       <div className="container mx-auto">
         <h2 className="section-title text-white">Guest <span className="text-white">Amenities</span></h2>
         
@@ -61,7 +62,7 @@ const Amenities = () => {
               <p className="text-white mb-6 font-body">
                 Nestled in the bay adjacent to Silaka Nature Reserve, our accommodation allows you to unwind in the natural beauty that the majestic Transkei has to offer.
               </p>
-              <a href="#contact" style={{ color: 'white' }} className="bg-white text-coastal-green hover:bg-white/90 px-6 py-3 rounded-md inline-block transition-colors w-max font-medium text-coastal-green font-bold ">
+              <a href="#contact" className="bg-white text-coastal-green hover:bg-white/90 px-6 py-3 rounded-md inline-block transition-colors w-max font-medium font-bold">
                 Book Your Stay
               </a>
             </div>
