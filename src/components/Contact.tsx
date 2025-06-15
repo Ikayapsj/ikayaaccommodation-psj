@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from 'sonner';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +15,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const {
       name,
@@ -23,29 +26,38 @@ const Contact = () => {
       [name]: value
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        checkIn: '',
-        checkOut: '',
-        guests: '',
-        message: ''
-      });
+    const { error } = await supabase.functions.invoke('send-booking-email', {
+      body: formData,
+    });
+    
+    setIsSubmitting(false);
 
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
-    }, 1500);
+    if (error) {
+      console.error("Error sending booking request:", error);
+      toast.error("There was an error sending your request. Please try again later.");
+      return;
+    }
+
+    setIsSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      checkIn: '',
+      checkOut: '',
+      guests: '',
+      message: ''
+    });
+
+    // Reset success message after 5 seconds
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 5000);
   };
   return (
     <section id="contact" className="py-12 px-4 sm:px-6 md:py-16 lg:px-8 bg-coastal-brown">
@@ -93,7 +105,7 @@ const Contact = () => {
                     
                     <div>
                       <label htmlFor="checkOut" className="block text-gray-700 mb-1">Check-out Date</label>
-                      <input type="date" id="checkOut" name="checkOut" value={formData.checkOut} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent" required />
+                      <input type="date" id="checkOut" name="checkOut" value={formData.checkOut} onChange={handleChange} className="w-full px-4 py-2 border border-ray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coastal-green focus:border-transparent" required />
                     </div>
                   </div>
                   
