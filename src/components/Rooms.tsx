@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Bed, Users, Check } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
@@ -8,10 +7,7 @@ const roomsData = [{
   name: "Double Room with Garden View",
   description: "Comfortable room with an en-suite bathroom and a shared kitchen space.",
   images: [
-    "/lovable-uploads/f5ba014e-2406-4f1b-9825-079b1f18e83e.png",
-    "/lovable-uploads/e07292db-e503-4577-8f4b-66ab1f6e7dc2.png",
-    "/lovable-uploads/b1a9d37a-5989-4695-b167-6212731dc7d0.png",
-    "/lovable-uploads/83965c34-ea5d-41bc-a8bf-bd486f38a165.png"
+    "/lovable-uploads/7b5af5dc-65c8-4408-a1df-d80ab7586278.png"
   ],
   beds: "1 Double Bed",
   occupancy: "2 Guests",
