@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
+import { Phone, Mail, MapPin, Calendar, Car } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 
@@ -157,6 +158,24 @@ const Contact = () => {
                     color: '#5f7f61'
                   }}>Phone</h4>
                     <p className="text-gray-600">+27 72 018 3007</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-coastal-cream rounded-full h-10 w-10 flex items-center justify-center mt-1">
+                    <Car style={{
+                    color: '#5f7f61'
+                  }} size={20} />
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium" style={{
+                    color: '#5f7f61'
+                  }}>Taxi Service</h4>
+                    <p className="text-gray-600">
+                      +27 83 865 8572
+                      <br />
+                      <span className="text-sm italic">Additional charge</span>
+                    </p>
                   </div>
                 </div>
                 
