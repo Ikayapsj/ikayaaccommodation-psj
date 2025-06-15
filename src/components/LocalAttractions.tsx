@@ -17,6 +17,11 @@ const LocalAttractions = () => {
       name: "Isinuka Sulphur Spring and Mud Pools",
       image: "/lovable-uploads/64625042-e20b-43e5-8ac8-9045f42adefd.png",
       description: "Isinuka, a traditional spa near Port St. Johns in South Africa, is a natural spring and bathing area revered by the AmaMpondo people for its spiritual and healing properties. It's known for its sulphur-rich water, which is believed to cure various ailments and is often used in traditional healing practices. The area is a popular destination for those seeking both recreational bathing and spiritual experiences."
+    },
+    {
+      name: "Dining Options",
+      image: "/lovable-uploads/f86d295e-3dd8-40b7-9778-9f48e4ff7494.png",
+      description: "Local restaurants just a short drive away"
     }
   ];
 
