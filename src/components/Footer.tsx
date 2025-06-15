@@ -49,6 +49,14 @@ const Footer = () => {
           <div>
             <Testimonials />
           </div>
+
+          <div className="flex justify-center items-center md:justify-start">
+            <img 
+              src="/lovable-uploads/95ae51ed-39c2-466e-892f-720370ca1961.png" 
+              alt="Ikaya Accommodation PSJ Logo" 
+              className="w-full max-w-[250px] h-auto"
+            />
+          </div>
         </div>
         
         <div className="border-t pt-6 mt-2" style={{borderColor: '#5f7f61'}}>
