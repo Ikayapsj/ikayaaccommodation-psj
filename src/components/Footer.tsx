@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram, MessageCircle } from 'lucide-react';
+import { Facebook, Instagram, MessageCircle, Link } from 'lucide-react';
 import Testimonials from './Testimonials';
 
 const Footer = () => {
@@ -43,6 +43,25 @@ const Footer = () => {
               >
                 <MessageCircle size={24} />
               </a>
+            </div>
+            <div className="mt-8">
+              <h4 className="text-lg font-subheading font-semibold mb-4" style={{color: '#5f7f61'}}>Quick Links</h4>
+              <ul className="space-y-2 font-body">
+                <li><a href="/#units" className="hover:text-coastal-green transition-colors">Our Units</a></li>
+                <li><a href="#" className="hover:text-coastal-green transition-colors">Guest Registry</a></li>
+                <li><a href="/#contact" className="hover:text-coastal-green transition-colors">Book Now</a></li>
+                <li>
+                  <a 
+                    href="https://drive.google.com/file/d/17tfZdrdTdA17J897rxQoXX1u3DAeBs6J/view?usp=drive_link" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center hover:text-coastal-green transition-colors"
+                  >
+                    Guest Information
+                    <Link size={14} className="ml-1.5" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           
