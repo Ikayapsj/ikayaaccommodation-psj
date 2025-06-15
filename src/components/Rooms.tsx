@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Bed, Users, Check } from 'lucide-react';
 const roomsData = [{
@@ -22,7 +23,7 @@ const roomsData = [{
   id: 3,
   name: "Double Room with Sea View",
   description: "Includes a deck with BBQ facilities and a lovely ocean view.",
-  image: "/lovable-uploads/bf9e6838-82bd-467e-9807-c6659e1831af.png",
+  image: "/lovable-uploads/f86d295e-3dd8-40b7-9778-9f48e4ff7494.png",
   beds: "1 Double Bed",
   occupancy: "2 Guests",
   features: ["En-suite bathroom", "Fan", "Free WiFi", "Full kitchen", "Deck with BBQ facilities", "Ocean view", "Pet-friendly"],
@@ -46,7 +47,7 @@ const Rooms = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {roomsData.map(room => <div key={room.id} className="bg-white rounded-lg overflow-hidden shadow-smooth hover:shadow-lg transition-all group">
               <div className="relative h-60 overflow-hidden">
-                <img src={room.image} alt={room.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={room.image} alt={room.name} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 right-4 bg-coastal-green text-white px-3 py-1 rounded-md text-sm font-medium">
                   {room.price} per night
                 </div>
