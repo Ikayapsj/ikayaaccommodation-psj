@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Wifi, MapPin, Car, Bath, Utensils, TreePine } from 'lucide-react';
 
@@ -30,7 +29,7 @@ const amenitiesData = [
   },
   {
     name: "Dining Options",
-    description: "Local restaurants a short drive nearby",
+    description: "Local restaurants just a short drive away",
     icon: Utensils
   }
 ];
